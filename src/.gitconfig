@@ -18,9 +18,13 @@
     suk = stash -uk
     sukm = stash -ukm
     sp = stash pop
+    mc = merge --continue
     ri = rebase -i
     rc = rebase --continue
     ra = rebase --abort
+    ch = cherry-pick
+    sh = show
+    st = status
 [init]
     defaultBranch = main
 # COMMON END

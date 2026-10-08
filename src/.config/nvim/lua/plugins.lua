@@ -66,12 +66,6 @@ return { {
   -- use opts = {} for passing setup options
   -- this is equivalent to setup({}) function
 }, {
-  'windwp/nvim-autopairs',
-  event = "InsertEnter",
-  config = true
-  -- use opts = {} for passing setup options
-  -- this is equivalent to setup({}) function
-}, {
   "kylechui/nvim-surround",
   version = "^4.0.0", -- Use for stability; omit to use `main` branch for the latest features
   event = "VeryLazy"

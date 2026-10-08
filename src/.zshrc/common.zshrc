@@ -36,45 +36,6 @@ bindkey '^g' fzf-file-widget
 
 setopt interactivecomments
 
-alias el="eza --icons --git --no-user"
-alias ell="eza -l --icons --git --no-user"
-alias ela="eza -la --icons --git --no-user"
-alias etree="eza --tree --icons"
-
-alias g=git
-alias ga='git a'
-alias ga.='git a .'
-alias gc='git c'
-alias gcm='git cm'
-alias gad='git ad'
-alias gadm='git adm'
-alias gb='git b'
-alias gco='git co'
-alias gcob='git cob'
-alias gl='git l'
-alias glp='git lp'
-alias glpn='git lpn'
-alias gs='git s'
-alias gsl='git sl'
-alias gsu='git su'
-alias gsum='git sum'
-alias gsuk='git suk'
-alias gsukm='git sukm'
-alias gsp='git sp'
-alias greset='git reset'
-alias gpull='git pull'
-alias gpush='git push'
-alias gfetch='git fetch'
-alias gmerge='git merge'
-alias gri='git ri'
-alias grc='git rc'
-alias gra='git ra'
-alias greflog='git reflog'
-alias ginit='git init'
-alias gclone='git clone'
-alias gremote='git remote'
-alias gsub='git submodule'
-
 bindkey -v
 bindkey -M viins 'jk' vi-cmd-mode
 bindkey -M viins ';;' expand-or-complete
@@ -141,5 +102,60 @@ function shellcolors() {
     echo -e "Foreground: \"\\\033[38;2;<red(0-255)>;<green(0-255)>;<blue(0-255)>m\\\033[m\""
     echo -e "Background: \"\\\033[48;2;<red(0-255)>;<green(0-255)>;<blue(0-255)>m\\\033[m\""
 }
+
+alias el="eza --icons --git --no-user"
+alias ell="eza -l --icons --git --no-user"
+alias ela="eza -la --icons --git --no-user"
+alias etree="eza --tree --icons"
+
+alias g=git
+alias ga='git a'
+alias ga.='git a .'
+alias gc='git c'
+alias gcm='git cm'
+alias gad='git ad'
+alias gadm='git adm'
+alias gb='git b'
+alias gco='git co'
+alias gcob='git cob'
+alias gl='git l'
+alias glp='git lp'
+alias glpn='git lpn'
+alias gs='git s'
+alias gsl='git sl'
+alias gsu='git su'
+alias gsum='git sum'
+alias gsuk='git suk'
+alias gsukm='git sukm'
+alias gsp='git sp'
+alias greset='git reset'
+alias gpull='git pull'
+alias gpush='git push'
+alias gfetch='git fetch'
+alias gmerge='git merge'
+alias grevert='git revert'
+alias grestore='git restore'
+alias gmc='git mc'
+alias gri='git ri'
+alias grc='git rc'
+alias gra='git ra'
+alias gch='git ch'
+alias gsh='git sh'
+alias gst='git st'
+alias greflog='git reflog'
+alias ginit='git init'
+alias gclone='git clone'
+alias gremote='git remote'
+alias gsub='git submodule'
+
+alias .l='source ~/.zshrc'
+alias tk='tmux kill-server'
+alias ezi='idea ~/.zshrc'
+alias ezn='nvim ~/.zshrc'
+alias ezc='code ~/.zshrc'
+
+alias cid='git show -s --format=%H | tee /dev/tty | pbcopy'
+
+source ~/.set-env
 
 # COMMON END

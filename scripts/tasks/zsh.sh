@@ -29,7 +29,7 @@ import_zshrc() {
     sed -n '/# COMMON START/,/# COMMON END/p' ~/.zshrc >"${target_zshrc_dir}/common.zshrc"
     sed '/# COMMON START/,$d' ~/.zshrc >"${target_zshrc_dir}/${os_type}.zshrc"
     echo "# INSERT COMMON" >>"${target_zshrc_dir}/${os_type}.zshrc"
-    sed '1,/# COMMON END/d' ~/.zshrc >>"${target_zshrc_dir}/${os_type}.zshrc"
+    sed -e '1,/# COMMON END/d' -e '/^# IGNORE BELOW/,$d' ~/.zshrc >>"${target_zshrc_dir}/${os_type}.zshrc"
     ;;
   *)
     echo "❌ Unknown or unsupported environment."
