@@ -3,7 +3,7 @@
 ## Install
 
 ```sh
-gclone https://github.com/philip82148/dotfiles
+gclone https://github.com/sassan-dev/dotfiles
 cd dotfiles
 ./install.sh
 ```

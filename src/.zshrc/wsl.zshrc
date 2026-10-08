@@ -16,4 +16,4 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 
 export PATH="$PATH:/opt/nvim/"
 
-alias acl='/home/philip82148/projects/ac-library/expander.py --lib /home/philip82148/projects/ac-library'
+alias acl='/home/sassan-dev/projects/ac-library/expander.py --lib /home/sassan-dev/projects/ac-library'
