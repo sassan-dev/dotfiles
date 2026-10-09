@@ -34,7 +34,10 @@ vim.keymap.set({ 'n', 'x' }, 'ss', 'dd')
 vim.keymap.set({ 'n', 'x' }, 'S', 'D')
 
 -- [コメントアウト] 行・選択範囲のコメント切り替え
-vim.keymap.set({ "n", "x" }, "<Leader>c", "gc", {
+vim.keymap.set({ "n" }, "<Leader>c", "gcl", {
+  remap = true
+})
+vim.keymap.set({ "x" }, "<Leader>c", "gc", {
   remap = true
 })
 
